@@ -18,7 +18,11 @@
         //opera os dados
         for (let i=0; i<5; i++){
             const numero = 7+i; //colocar esses números criados dentro da lista
-            eUl.textContent += `<li>${numero}</li>`
+            const eLi = document.createElement ("li");
+            eLi.textContent = numero;
+            eUl.appendChild(eLi);
+
+           //eUl.innerHTML += `<li>${numero}</li>`; //Coloca pontos - innerHTML
         }
 
         //escreve na saída
